@@ -181,15 +181,15 @@ mkdir -p /home/\$HOST_USER 2>/dev/null
 echo -e "\033[1;32m已创建用户目录: /home/\$HOST_USER\033[0m"
 
 # 备份原始软件源
-cp /etc/apt/sources.list /etc/apt/sources.list.bak 2>/dev/null
+#cp /etc/apt/sources.list /etc/apt/sources.list.bak 2>/dev/null
 
 # 设置新的软件源
-tee /etc/apt/sources.list <<SOURCES
-deb http://archive.ubuntu.com/ubuntu noble main universe restricted multiverse
-deb http://archive.ubuntu.com/ubuntu noble-updates main universe restricted multiverse
-deb http://archive.ubuntu.com/ubuntu noble-backports main universe restricted multiverse
-deb http://security.ubuntu.com/ubuntu noble-security main universe restricted multiverse
-SOURCES
+#tee /etc/apt/sources.list <<SOURCES
+#deb http://archive.ubuntu.com/ubuntu noble main universe restricted multiverse
+#deb http://archive.ubuntu.com/ubuntu noble-updates main universe restricted multiverse
+#deb http://archive.ubuntu.com/ubuntu noble-backports main universe restricted multiverse
+#deb http://security.ubuntu.com/ubuntu noble-security main universe restricted multiverse
+#SOURCES
 
 # 显示提示信息
 echo -e "\033[1;32m软件源已更新为Ubuntu 24.04 (Noble)源\033[0m"
