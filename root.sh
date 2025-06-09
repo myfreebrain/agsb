@@ -94,7 +94,7 @@ case $install_ubuntu in
     echo "开始下载Ubuntu基础系统..."
     # 下载Ubuntu基础系统
     curl --retry $max_retries --connect-timeout $timeout -o /tmp/rootfs.tar.gz \
-      "http://cdimage.ubuntu.com/ubuntu-base/releases/20.04/release/ubuntu-base-20.04.4-base-${ARCH_ALT}.tar.gz"
+      "http://cdimage.ubuntu.com/ubuntu-base/releases/24.04/release/ubuntu-base-24.04.2-base-${ARCH_ALT}.tar.gz"
     
     echo "解压Ubuntu基础系统到 $ROOTFS_DIR..."
     # 解压到根文件系统目录
@@ -192,7 +192,7 @@ deb http://security.ubuntu.com/ubuntu jammy-security main universe restricted mu
 SOURCES
 
 # 显示提示信息
-echo -e "\033[1;32m软件源已更新为Ubuntu 22.04 (Jammy)源\033[0m"
+echo -e "\033[1;32m软件源已更新为Ubuntu 24.04 (Jammy)源\033[0m"
 echo -e "\033[1;33m正在更新系统并安装必要软件包，请稍候...\033[0m"
 
 # 更新系统并安装软件包
@@ -211,7 +211,7 @@ printf "\033[1;33m#                                                             
 printf "\033[1;33m################################################################################\033[0m\n"
 printf "\033[1;32m\n★ YouTube请点击关注!\033[0m\n"
 printf "\033[1;32m★ Github请点个Star支持!\033[0m\n\n"
-printf "\033[1;36m欢迎进入Ubuntu 20.04环境!\033[0m\n\n"
+printf "\033[1;36m欢迎进入Ubuntu 24.04环境!\033[0m\n\n"
 printf "\033[1;33m提示: 输入 'exit' 可以退出proot环境\033[0m\n\n"
 EOF
 
