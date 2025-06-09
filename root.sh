@@ -185,14 +185,14 @@ cp /etc/apt/sources.list /etc/apt/sources.list.bak 2>/dev/null
 
 # 设置新的软件源
 tee /etc/apt/sources.list <<SOURCES
-deb http://archive.ubuntu.com/ubuntu jammy main universe restricted multiverse
-deb http://archive.ubuntu.com/ubuntu jammy-updates main universe restricted multiverse
-deb http://archive.ubuntu.com/ubuntu jammy-backports main universe restricted multiverse
-deb http://security.ubuntu.com/ubuntu jammy-security main universe restricted multiverse
+deb http://archive.ubuntu.com/ubuntu noble main universe restricted multiverse
+deb http://archive.ubuntu.com/ubuntu noble-updates main universe restricted multiverse
+deb http://archive.ubuntu.com/ubuntu noble-backports main universe restricted multiverse
+deb http://security.ubuntu.com/ubuntu noble-security main universe restricted multiverse
 SOURCES
 
 # 显示提示信息
-echo -e "\033[1;32m软件源已更新为Ubuntu 24.04 (Jammy)源\033[0m"
+echo -e "\033[1;32m软件源已更新为Ubuntu 24.04 (Noble)源\033[0m"
 echo -e "\033[1;33m正在更新系统并安装必要软件包，请稍候...\033[0m"
 
 # 更新系统并安装软件包
